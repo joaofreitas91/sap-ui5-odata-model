@@ -1,0 +1,17 @@
+<mvc:View controllerName="com.lab2dev.stockcontrol.controller.Products"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <List id="list" items="{/Products}">
+                <items>
+                    <ObjectListItem title="{ProductName}" number="{UnitPrice}" numberUnit="{Currency}">
+                        <attributes>
+                            <ObjectAttribute text="{QuantityPerUnit}" />
+                        </attributes>
+                    </ObjectListItem>
+                </items>
+            </List>
+        </content>
+    </Page>
+</mvc:View>
